@@ -4,50 +4,49 @@ body {
   background: #f4f6f8;
 }
 
-header {
-  background: #0b4f6c;
+/* ===== TOP HEADER ===== */
+.top-header {
+  background: #0b4d1a;
   color: white;
-  padding: 15px;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-header h1 {
-  margin: 0;
-}
-
+/* ===== NAVBAR ===== */
 nav {
-  margin-top: 8px;
+  background: #f4c400;
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-  color: white;
+  color: #000;
   text-decoration: none;
-  margin-right: 15px;
+  margin: 0 12px;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background: #ffd84d;
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
+/* ===== MAIN CONTENT ===== */
 .container {
   background: white;
   padding: 25px;
   margin: 20px;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 h2 {
-  color: #0b4f6c;
+  color: #1f5e2e;
 }
 
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
+/* ===== TABLE ===== */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -60,11 +59,31 @@ footer {
 }
 
 .table th {
-  background: #e6f0f5;
+  background: #e9f5ec;
 }
 
+/* ===== GALLERY ===== */
 .gallery img {
   width: 220px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0b4d1a;
+  color: white;
+  padding: 20px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #f4c400;
+  text-decoration: none;
 }
