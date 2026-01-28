@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,10 +7,10 @@ body {
 
 /* ===== TOP HEADER ===== */
 .top-header {
-  background: #0b4d1a;
-  color: white;
+  background: #0b4d1a; /* Dark Green */
+  color: #ffffff;
   text-align: center;
-  padding: 12px;
+  padding: 14px;
 }
 
 .top-header h1 {
@@ -23,15 +24,16 @@ body {
 
 /* ===== NAVBAR / TABS ===== */
 nav {
-  background: #f4c400;
+  background: #f4c400; /* Yellow */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-bottom: 3px solid #0b4d1a;
 }
 
 nav a {
   color: #000;
-  padding: 12px 16px;
+  padding: 12px 18px;
   text-decoration: none;
   font-weight: bold;
   border-right: 1px solid #d6b200;
@@ -45,15 +47,15 @@ nav a:hover {
   background: #ffd84d;
 }
 
-/* ===== ACTIVE TAB (OPTIONAL) ===== */
+/* Active Tab */
 nav a.active {
   background: #0b4d1a;
-  color: white;
+  color: #ffffff;
 }
 
 /* ===== CONTENT ===== */
 .container {
-  background: white;
+  background: #ffffff;
   padding: 25px;
   margin: 20px;
   border-radius: 6px;
@@ -62,7 +64,7 @@ nav a.active {
 h2 {
   color: #1f5e2e;
   border-bottom: 2px solid #f4c400;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 /* ===== TABLE ===== */
@@ -73,7 +75,7 @@ h2 {
 
 .table th,
 .table td {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px;
 }
 
@@ -86,13 +88,13 @@ h2 {
   width: 220px;
   margin: 10px;
   border-radius: 6px;
-  border: 2px solid #ddd;
+  border: 2px solid #dddddd;
 }
 
 /* ===== FOOTER ===== */
 footer {
   background: #0b4d1a;
-  color: white;
+  color: #ffffff;
   padding: 20px;
   margin-top: 40px;
 }
@@ -103,7 +105,32 @@ footer {
   flex-wrap: wrap;
 }
 
+footer h3 {
+  margin-top: 0;
+  color: #f4c400;
+}
+
 footer a {
   color: #f4c400;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    border-right: none;
+    border-bottom: 1px solid #d6b200;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+  }
 }
