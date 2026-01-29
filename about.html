@@ -1,60 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About Institute</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>About Institute - Gramonnati Mandal’s College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {margin:0; font-family:Arial, Helvetica, sans-serif; background:#fff; color:#222;}
+
+        /* Header */
+        header {background:#0b3c5d; color:white; padding:20px 30px;}
+        .header-container {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+        .college-logo, .mafsu-logo {height:100px;}
+        .college-text {text-align:center; line-height:1.2; flex:1;}
+        .college-text span {display:block;}
+        .line1 {font-size:24px; font-weight:bold;}
+        .line2 {font-size:28px; font-weight:bold;}
+        .affiliation {font-size:16px; margin-top:8px;}
+
+        /* Navbar */
+        nav {background:#1d5d82;}
+        nav ul {list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center;}
+        nav ul li a {display:block; padding:14px 22px; color:white; text-decoration:none; font-size:16px;}
+        nav ul li a:hover {background:#144766;}
+
+        /* Breadcrumb */
+        .breadcrumb {padding:15px 30px; background:#f1f1f1; font-size:14px;}
+        .breadcrumb a {color:#0b3c5d; text-decoration:none; margin-right:5px;}
+        .breadcrumb span {margin-right:5px;}
+
+        /* About Section */
+        .about-section {max-width:1200px; margin:auto; padding:40px 20px;}
+        .about-section h2 {color:#0b3c5d; font-size:28px; margin-bottom:30px; text-align:center;}
+        .about-section p {font-size:16px; line-height:1.6; margin-bottom:20px;}
+
+        /* Messages */
+        .message {display:flex; flex-wrap:wrap; margin-bottom:40px; align-items:center;}
+        .message img {width:200px; height:auto; border-radius:8px; margin-right:20px;}
+        .message-text {flex:1;}
+        .message-text h3 {color:#0b3c5d; margin-bottom:10px;}
+        .message-text p {font-size:15px; line-height:1.5;}
+
+        /* Vision & Mission */
+        .vision-mission {display:flex; flex-wrap:wrap; justify-content:space-between; margin-bottom:40px;}
+        .vm-box {flex:1; min-width:300px; margin:10px; padding:20px; border:1px solid #0b3c5d; border-radius:5px; background:#f9f9f9;}
+        .vm-box h3 {color:#0b3c5d; margin-bottom:10px;}
+        .vm-box p {font-size:15px; line-height:1.5;}
+
+        /* Achievements */
+        .achievements {margin-bottom:40px;}
+        .achievements ul {list-style:disc; padding-left:20px;}
+        .achievements ul li {font-size:16px; line-height:1.8; margin-bottom:8px; color:#0b3c5d;}
+
+        /* Footer */
+        footer {background:#0b3c5d; color:white; text-align:center; padding:15px; font-size:13px;}
+
+        /* Responsive adjustments */
+        @media (max-width:768px){
+            .header-container {flex-direction: column; text-align:center;}
+            nav ul {flex-direction:column;}
+            nav ul li a {padding:12px;}
+            .message {flex-direction:column; text-align:center;}
+            .message img {margin:0 0 20px 0;}
+            .vision-mission {flex-direction:column; align-items:center;}
+        }
+    </style>
 </head>
 <body>
-<div class="top-header">
-  <img src="images/logo-left.png">
 
-  <div class="header-center">
-    <h1>
-      Gramonnati Mandal’s<br>
-      College of Livestock Management & Dairy Production
-    </h1>
-    <small>
-      Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
-    </small>
-  </div>
-
-  <img src="images/logo-right.png">
-</div>
+<header>
+    <div class="header-container">
+        <img src="images/logo.png" alt="College Logo" class="college-logo">
+        <div class="college-text">
+            <span class="line1">Gramonnati Mandal’s</span>
+            <span class="line2">College of Livestock Management & Dairy Production</span>
+            <span class="affiliation">Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur</span>
+        </div>
+        <img src="images/mafsu_logo.png" alt="MAFSU Logo" class="mafsu-logo">
+    </div>
+</header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Institute</a>
-  <a href="faculty.html">Faculty & Staff</a>
-  <a href="admission.html">Admissions</a>
-  <a href="syllabus.html">Syllabus</a>
-  <a href="gallary.html">Gallery</a>
-  <a href="contact.html">Contact Us</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Institute</a></li>
+        <li><a href="program.html">Programme</a></li>
+        <li><a href="faculty.html">Faculty & Staff</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
 
-
-<div class="container">
-  <h2>About Institute</h2>
-  <img src="images/institute.jpg" style="max-width:500px;width:100%;">
-  <p>
-    The institute was established to uplift rural society through
-    education and hands-on training.
-  </p>
+<div class="breadcrumb">
+    <a href="index.html">Home</a> <span>&gt;</span> About Institute
 </div>
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h3>Quick Links</h3>
-      Home<br>About<br>Faculty<br>Admissions<br>Gallery
-    </div>
-    <div>
-      <h3>Contact Us</h3>
-      Email: principalgmkrrishi@gmail.com<br>
-      Phone: 9730804768<br>
-      Narayangaon, Tal. Junnar, Dist. Pune
-    </div>
-  </div>
-</footer>
 
+<div class="about-section">
+    <h2>About Gramonnati Mandal’s College</h2>
+    <p>
+        Gramonnati Mandal’s College of Livestock Management & Dairy Production provides practical and skill-based education
+        to train students in livestock management and dairy production. Our programs focus on modern technologies,
+        hands-on training, and rural entrepreneurship.
+    </p>
+
+    <!-- Principal Message -->
+    <div class="message">
+        <img src="images/principal.jpg" alt="Principal Image">
+        <div class="message-text">
+            <h3>Principal’s Message</h3>
+            <p>Welcome to our esteemed college. We aim to combine modern education with practical experience
+            to prepare students for future challenges in livestock and dairy industries.</p>
+        </div>
+    </div>
+
+    <!-- Chairman Message -->
+    <div class="message">
+        <img src="images/chairman.jpg" alt="Chairman Image">
+        <div class="message-text">
+            <h3>Chairman’s Message</h3>
+            <p>Our college stands for excellence in education and research. We provide students with the
+            best opportunities to learn, innovate, and succeed in the dairy and livestock sector.</p>
+        </div>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="vision-mission">
+        <div class="vm-box">
+            <h3>Vision</h3>
+            <p>To be a leading institute in livestock management and dairy production, empowering students for sustainable growth in agriculture.</p>
+        </div>
+        <div class="vm-box">
+            <h3>Mission</h3>
+            <p>To provide skill-based education, practical training, and research opportunities preparing students for professional excellence.</p>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="achievements">
+        <h3>Achievements</h3>
+        <ul>
+            <li>Established modern dairy training labs and research facilities.</li>
+            <li>Graduated over 500 skilled professionals in livestock and dairy management.</li>
+            <li>Active collaborations with Maharashtra Animal & Fishery Sciences University.</li>
+            <li>Recognized for excellence in rural entrepreneurship training.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>
+        © Gramonnati Mandal’s College of Livestock Management & Dairy Production<br>
+        Narayangaon, Tal. Junnar, Dist. Pune, Maharashtra<br>
+        Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
+    </p>
+</footer>
 
 </body>
 </html>

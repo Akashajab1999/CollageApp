@@ -1,60 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Admissions</title>
-<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Admissions | LMDP Narayangaon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL ===== */
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#222;
+}
+a{text-decoration:none;color:#0f3d0f;}
+h1,h2,h3{margin:0;color:#0f3d0f;}
+
+/* ===== HEADER ===== */
+header{
+    background:#0f3d0f;
+    padding:15px 30px;
+    color:white;
+}
+.header-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.college-logo,.mafsu-logo{height:90px;}
+.college-text{text-align:center;flex:1;}
+.line1{font-size:22px;font-weight:bold;}
+.line2{font-size:26px;font-weight:bold;}
+.affiliation{font-size:14px;margin-top:5px;}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#f4c842;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:3px solid #0f3d0f;
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+nav ul li a{
+    display:block;
+    padding:16px 22px;
+    font-weight:bold;
+}
+nav ul li a:hover{
+    background:#e0b631;
+}
+
+/* ===== PAGE CONTENT ===== */
+.page-content{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* ===== ADMISSION NOTICE ===== */
+.notice-box{
+    border:4px solid darkred;
+    padding:40px 20px;
+    margin-top:40px;
+    background:#fff5f5;
+    animation: blink 1.2s infinite;
+}
+.notice-box h1{
+    color:darkred;
+    font-size:36px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+/* BLINK ANIMATION */
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.2;}
+    100%{opacity:1;}
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#0f3d0f;
+    color:white;
+    padding:30px 20px;
+}
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+footer h3{color:#f4c842;}
+footer ul{list-style:none;padding:0;}
+footer ul li{margin-bottom:8px;}
+footer ul li a{color:white;}
+footer ul li a:hover{color:#f4c842;}
+.contact-info p{margin:6px 0;}
+
+@media(max-width:768px){
+    .header-container{flex-direction:column;text-align:center;}
+    nav ul{flex-direction:column;}
+    .notice-box h1{font-size:26px;}
+}
+</style>
 </head>
+
 <body>
 
-<div class="top-header">
-  <img src="images/logo-left.png">
-
-  <div class="header-center">
-    <h1>
-      Gramonnati Mandal’s<br>
-      College of Livestock Management & Dairy Production
-    </h1>
-    <small>
-      Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
-    </small>
-  </div>
-
-  <img src="images/logo-right.png">
+<header>
+<div class="header-container">
+    <img src="images/logo.png" class="college-logo" alt="College Logo">
+    <div class="college-text">
+        <div class="line1">Gramonnati Mandal’s</div>
+        <div class="line2">Diploma School of Livestock Management & Dairy Production</div>
+        <div class="affiliation">
+            Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
+        </div>
+    </div>
+    <img src="images/mafsu_logo.png" class="mafsu-logo" alt="MAFSU Logo">
 </div>
+</header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Institute</a>
-  <a href="faculty.html">Faculty & Staff</a>
-  <a href="admission.html">Admissions</a>
-  <a href="syllabus.html">Syllabus</a>
-  <a href="gallary.html">Gallery</a>
-  <a href="contact.html">Contact Us</a>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about-section">About Institute</a></li>
+    <li><a href="staff.html">Faculty & Staff</a></li>
+    <li><a href="admission.html">Admissions</a></li>
+    <li><a href="#">Syllabus</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
 </nav>
 
-
-<div class="container">
-  <h2>Admissions</h2>
-  <p>Course: Diploma in Livestock Management & Dairy Production</p>
-  <p>Duration: 1 Year</p>
-  <p>Eligibility: SSC Passed</p>
+<div class="page-content">
+    <div class="notice-box">
+        <h1>Admissions for AY 2025–26 are Closed</h1>
+    </div>
 </div>
 
 <footer>
-  <div class="footer-grid">
+<div class="footer-container">
     <div>
-      <h3>Quick Links</h3>
-      Home<br>About<br>Faculty<br>Admissions<br>Gallery
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="staff.html">Faculty & Staff</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </div>
-    <div>
-      <h3>Contact Us</h3>
-      Email: principalgmkrrishi@gmail.com<br>
-      Phone: 9730804768<br>
-      Narayangaon, Tal. Junnar, Dist. Pune
+    <div class="contact-info">
+        <h3>Contact</h3>
+        <p><strong>Address:</strong> Narayangaon, Tal. Junnar, Dist. Pune – 410504</p>
+        <p><strong>Email:</strong> principalgmkrishi@gmail.com</p>
     </div>
-  </div>
+</div>
+<div style="text-align:center;margin-top:15px;font-size:14px;">
+© Gramonnati Mandal’s Diploma School of Livestock Management & Dairy Production
+</div>
 </footer>
-
 
 </body>
 </html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Faculty & Staff | Gramonnati Mandal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL (same as index) ===== */
+body {margin:0; font-family:Arial, Helvetica, sans-serif; background:#fff; color:#222;}
+a {text-decoration:none; color:#222;}
+h1,h2,h3 {margin:0; padding:0; color:#0f3d0f;}
+
+/* ===== HEADER (COPIED FROM INDEX) ===== */
+header {background:#0f3d0f; padding:15px 30px; color:white;}
+.header-container {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+.college-logo, .mafsu-logo {height:100px;}
+.college-text {text-align:center; line-height:1.2; flex:1;}
+.college-text span {display:block;}
+.line1 {font-size:24px; font-weight:bold;}
+.line2 {font-size:28px; font-weight:bold;}
+.affiliation {font-size:14px; margin-top:5px; color:#f5f5f5;}
+
+/* ===== NAVBAR (COPIED FROM INDEX) ===== */
+nav {
+    background:#f4c842;
+    border-bottom:2px solid #0f3d0f;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+nav ul li a {
+    display:block;
+    padding:18px 25px;
+    color:#0f3d0f;
+    font-size:18px;
+    font-weight:bold;
+}
+nav ul li a:hover {
+    background:#e0b631;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title {
+    text-align:center;
+    padding:40px 20px 20px;
+}
+.page-title h1 {
+    font-size:32px;
+}
+
+/* ===== STAFF SECTION ===== */
+.staff-wrapper {
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+.staff-category {
+    margin-bottom:50px;
+}
+.staff-category h2 {
+    background:#0f3d0f;
+    color:#f4c842;
+    padding:10px 15px;
+    border-radius:4px;
+    margin-bottom:25px;
+}
+
+/* GRID */
+.staff-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:25px;
+}
+.staff-card {
+    border:1px solid #0f3d0f;
+    border-radius:6px;
+    padding:15px;
+    text-align:center;
+    background:#fff;
+}
+.staff-card img {
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #f4c842;
+    margin-bottom:10px;
+}
+.staff-card h3 {
+    font-size:18px;
+    margin-bottom:5px;
+}
+.staff-card p {
+    margin:4px 0;
+    font-size:14px;
+}
+
+/* ===== FOOTER (UNCHANGED STYLE) ===== */
+footer {
+    background:#0f3d0f;
+    color:white;
+    padding:30px 20px;
+}
+.footer-container {
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+footer h3 {
+    color:#f4c842;
+}
+footer ul {
+    list-style:none;
+    padding:0;
+}
+footer ul li {
+    margin-bottom:8px;
+}
+footer ul li a {
+    color:white;
+}
+footer ul li a:hover {
+    color:#f4c842;
+}
+.contact-info p {
+    margin:6px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .header-container {flex-direction:column; text-align:center;}
+    nav ul {flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="header-container">
+        <img src="images/logo.png" alt="College Logo" class="college-logo">
+        <div class="college-text">
+            <span class="line1">Gramonnati Mandal’s</span>
+            <span class="line2">College of Livestock Management & Dairy Production</span>
+            <span class="affiliation">
+                Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
+            </span>
+        </div>
+        <img src="images/mafsu_logo.jpg" alt="MAFSU Logo" class="mafsu-logo">
+    </div>
+</header>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about-section">About Institute</a></li>
+        <li><a href="staff.html">Faculty & Staff</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<!-- ===== TITLE ===== -->
+<div class="page-title">
+    <h1>Faculty & Staff</h1>
+</div>
+
+<!-- ===== STAFF CONTENT ===== -->
+<div class="staff-wrapper">
+
+<!-- MANAGEMENT -->
+<div class="staff-category">
+<h2>Management</h2>
+<div class="staff-grid">
+
+<div class="staff-card">
+<img src="images/chairman.jpg">
+<h3>Mr. Krushiratna Anil G. Meher</h3>
+<p><strong>Chairman</strong></p>
+</div>
+
+<div class="staff-card">
+<img src="images/secretary.jpg">
+<h3>Mr. Ravindra Gajanan Pargaokar</h3>
+<p><strong>Secretary</strong></p>
+</div>
+
+</div>
+</div>
+
+<!-- TEACHING STAFF -->
+<div class="staff-category">
+<h2>Teaching Staff</h2>
+<div class="staff-grid">
+
+<div class="staff-card">
+<img src="images/principal.jpg">
+<h3>Mr. R. N. Gaikwad</h3>
+<p><strong>Principal</strong></p>
+<p>M.Sc. (Agri.)</p>
+</div>
+
+<div class="staff-card">
+<img src="images/sd.jpg">
+<h3>Dr. Santosh S. Danve</h3>
+<p>Lecturer</p>
+<p>B.V.Sc. & A.H.</p>
+</div>
+
+<div class="staff-card">
+<img src="images/mb.jpg">
+<h3>Mrs. Modhave V. B.</h3>
+<p>Lecturer</p>
+<p>M.Com., Ph.D.</p>
+</div>
+
+</div>
+</div>
+
+<!-- NON TEACHING -->
+<div class="staff-category">
+<h2>Non-Teaching Staff</h2>
+<div class="staff-grid">
+
+<div class="staff-card">
+<img src="images/sa.jpg">
+<h3>Mr. Santosh B. Auti</h3>
+<p>Clerk</p>
+<p>B.Sc.</p>
+</div>
+
+<div class="staff-card">
+<img src="images/peon.jpg">
+<h3>Mr. H. S. Jadhav</h3>
+<p>Peon</p>
+<p>S.S.C.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="staff.html">Faculty & Staff</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p><strong>Address:</strong> Narayangaon, Tal. Junnar, Dist. Pune – 410504</p>
+            <p><strong>Email:</strong> principalgmkrishi@gmail.com</p>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:15px;font-size:14px;">
+        © Gramonnati Mandal’s College of Livestock Management & Dairy Production
+    </div>
+</footer>
+
+</body>
+</html>
