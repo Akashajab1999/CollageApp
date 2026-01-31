@@ -1,265 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery | College of Livestock Management & Dairy Production</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* ===== HEADER (SAME AS INDEX) ===== */
-header{
-    background:#0f3d0f;
-    padding:15px 30px;
-    color:white;
-}
-
-.header-container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-}
-
-.college-logo,
-.mafsu-logo{
-    height:100px;
-}
-
-.college-text{
-    text-align:center;
-    flex:1;
-}
-
-.college-text .line1{
-    font-size:24px;
-    font-weight:bold;
-}
-
-.college-text .line2{
-    font-size:28px;
-    font-weight:bold;
-}
-
-.affiliation{
-    font-size:14px;
-    margin-top:5px;
-}
-
-/* ===== NAVBAR ===== */
-nav{
-    background:#FFD400;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-nav ul li{
-    margin:12px 18px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:#0f3d0f;
-    font-weight:bold;
-    font-size:18px;
-}
-
-/* ===== PAGE TITLE ===== */
-.page-title{
-    background:#e9f5e9;
-    padding:20px;
-    text-align:center;
-}
-
-.page-title h2{
-    color:#0f3d0f;
-    font-size:30px;
-}
-
-/* ===== GALLERY ===== */
-.gallery-container{
-    padding:30px;
-    max-width:1200px;
-    margin:auto;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:20px;
-}
-
-.gallery-grid img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
-    border:4px solid #FFD400;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.gallery-grid img:hover{
-    transform:scale(1.05);
-}
-
-/* ===== LIGHTBOX ===== */
-.lightbox{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.85);
-    justify-content:center;
-    align-items:center;
-    z-index:2000;
-}
-
-.lightbox img{
-    max-width:90%;
-    max-height:90%;
-    border:5px solid white;
-}
-
-.lightbox:target{
-    display:flex;
-}
-
-/* ===== FOOTER ===== */
-footer{
-    background:#0f3d0f;
-    color:white;
-    padding:25px;
-    margin-top:40px;
-}
-
-.footer-content{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-}
-
-.footer-box{
-    flex:1 1 300px;
-    margin:10px;
-}
-
-.footer-box h3{
-    color:#FFD400;
-    margin-bottom:10px;
-}
-
-/* ===== MOBILE ===== */
-@media(max-width:768px){
-    .header-container{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .college-logo,
-    .mafsu-logo{
-        height:80px;
-        margin:10px 0;
-    }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | College of Livestock Management & Dairy Production</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
-    <div class="header-container">
-        <img src="images/logo.png" class="college-logo" alt="College Logo">
-
-        <div class="college-text">
-            <div class="line1">Gramonnati Mandal’s</div>
-            <div class="line2">College of Livestock Management & Dairy Production</div>
-            <div class="affiliation">
-                Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
-            </div>
-        </div>
-
-        <img src="images/mafsu_logo.jpeg" class="mafsu-logo" alt="MAFSU Logo">
+<header class="site-header">
+  <div class="header-container">
+    <img src="Images/logo.png" class="college-logo" alt="College Logo">
+    <div class="college-text">
+      <span class="line1">Gramonnati Mandal’s</span>
+      <span class="line2">College of Livestock Management & Dairy Production</span>
+      <span class="affiliation">Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur</span>
     </div>
+    <img src="Images/mafsu_logo.jpeg" class="mafsu-logo" alt="MAFSU Logo">
+  </div>
 </header>
 
-<!-- ===== NAVBAR ===== -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about-section">About Institute</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="admission.html">Admission</a></li>
-         <li><a href="#">Syllabus</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Institute</a></li>
+    <li><a href="program.html">Programme</a></li>
+    <li><a href="staff.html">Faculty & Staff</a></li>
+    <li><a href="admission.html">Admissions</a></li>
+    <li><a href="syllabus.html">Syllabus</a></li>
+    <li><a href="gallary.html" class="active">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
 <div class="page-title">
-    <h2>Photo Gallery</h2>
+  <h2>Gallery</h2>
 </div>
 
-<div class="gallery-container">
+<main class="page">
+  <section class="section gallery-container">
     <div class="gallery-grid">
-        <a href="#img1"><img src="images/certificate.jpeg"></a>
-        <a href="#img1"><img src="images/building.jpeg"></a>
-        <a href="#img2"><img src="images/intrance.jpeg"></a>
-        <a href="#img3"><img src="images/cow1.jpeg"></a>
-        <a href="#img4"><img src="images/cow2.jpeg"></a>
-        <a href="#img5"><img src="images/hen1.jpeg"></a>
-        <a href="#img6"><img src="images/hen2.jpeg"></a>
-        <a href="#img7"><img src="images/sheli1.jpeg"></a>
-        <a href="#img8"><img src="images/azola.jpeg"></a>
-        <a href="#img9"><img src="images/sport.jpeg"></a>
-        <a href="#img9"><img src="images/sport1.jpeg"></a>
-        <a href="#img9"><img src="images/sport2.jpeg"></a>
+      <a href="#img1"><img src="Images/certificate.jpeg" alt="Certificate"></a>
+      <a href="#img2"><img src="Images/building.jpeg" alt="Campus building"></a>
+      <a href="#img3"><img src="Images/hero.jpeg" alt="Campus view"></a>
+      <a href="#img4"><img src="Images/cow1.jpeg" alt="Livestock training"></a>
+      <a href="#img5"><img src="Images/cow2.jpeg" alt="Dairy cattle"></a>
+      <a href="#img6"><img src="Images/hen1.jpeg" alt="Poultry training"></a>
+      <a href="#img7"><img src="Images/hen2.jpeg" alt="Poultry unit"></a>
+      <a href="#img8"><img src="Images/sheli1.jpeg" alt="Goat unit"></a>
+      <a href="#img9"><img src="Images/azola.jpeg" alt="Azolla unit"></a>
+      <a href="#img10"><img src="Images/sport.jpeg" alt="Sports activity"></a>
     </div>
-</div>
+  </section>
+</main>
 
-<!-- LIGHTBOX -->
-<div id="img1" class="lightbox"><a href="#"><img src="images/building.jpeg"></a></div>
-<div id="img2" class="lightbox"><a href="#"><img src="images/intrance.jpeg"></a></div>
-<div id="img3" class="lightbox"><a href="#"><img src="images/cow1.jpeg"></a></div>
-<div id="img4" class="lightbox"><a href="#"><img src="images/cow2.jpeg"></a></div>
-<div id="img5" class="lightbox"><a href="#"><img src="images/hen1.jpeg"></a></div>
-<div id="img6" class="lightbox"><a href="#"><img src="images/hen2.jpeg"></a></div>
-<div id="img7" class="lightbox"><a href="#"><img src="images/sheli1.jpeg"></a></div>
-<div id="img8" class="lightbox"><a href="#"><img src="images/azola.jpeg"></a></div>
-<div id="img9" class="lightbox"><a href="#"><img src="images/sport.jpeg"></a></div>
-<div id="img9" class="lightbox"><a href="#"><img src="images/sport1.jpeg"></a></div>
-<div id="img9" class="lightbox"><a href="#"><img src="images/sport2.jpeg"></a></div>
+<div id="img1" class="lightbox"><a href="#"><img src="Images/certificate.jpeg" alt="Certificate"></a></div>
+<div id="img2" class="lightbox"><a href="#"><img src="Images/building.jpeg" alt="Campus building"></a></div>
+<div id="img3" class="lightbox"><a href="#"><img src="Images/hero.jpeg" alt="Campus view"></a></div>
+<div id="img4" class="lightbox"><a href="#"><img src="Images/cow1.jpeg" alt="Livestock training"></a></div>
+<div id="img5" class="lightbox"><a href="#"><img src="Images/cow2.jpeg" alt="Dairy cattle"></a></div>
+<div id="img6" class="lightbox"><a href="#"><img src="Images/hen1.jpeg" alt="Poultry training"></a></div>
+<div id="img7" class="lightbox"><a href="#"><img src="Images/hen2.jpeg" alt="Poultry unit"></a></div>
+<div id="img8" class="lightbox"><a href="#"><img src="Images/sheli1.jpeg" alt="Goat unit"></a></div>
+<div id="img9" class="lightbox"><a href="#"><img src="Images/azola.jpeg" alt="Azolla unit"></a></div>
+<div id="img10" class="lightbox"><a href="#"><img src="Images/sport.jpeg" alt="Sports activity"></a></div>
 
-<footer>
-    <div class="footer-content">
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <p>Home | About | Staff | Gallery | Contact</p>
-        </div>
-        <div class="footer-box">
-            <h3>Contact</h3>
-            <p>📍 Narayangaon, Tal. Junnar, Dist. Pune</p>
-            <p>📞 9730804768</p>
-            <p>✉️ principalgmkrishi@gmail.com</p>
-        </div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="program.html">Programme</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
+      </ul>
     </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: principalgmkrishi@gmail.com</p>
+      <p>Phone: 9730804768</p>
+      <p>Narayangaon, Pune, Maharashtra</p>
+    </div>
+  </div>
 </footer>
 
 </body>

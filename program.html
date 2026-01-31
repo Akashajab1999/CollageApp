@@ -3,189 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Programme Offered | Gramonnati Mandal’s College of Livestock Management & Dairy Production</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #222;
-        }
-
-        /* Header */
-        .top-header {
-            background-color: #0b3c5d;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .top-header h1 {
-            margin: 0;
-            font-size: 26px;
-        }
-
-        .top-header p {
-            margin-top: 5px;
-            font-size: 14px;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: #1d5d82;
-        }
-
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .navbar ul li a {
-            display: block;
-            padding: 12px 18px;
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-        }
-
-        .navbar ul li a:hover {
-            background-color: #144766;
-        }
-
-        /* Content */
-        .content {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .content h2 {
-            color: #0b3c5d;
-        }
-
-        .programme-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .programme-table th, .programme-table td {
-            border: 1px solid #0b3c5d;
-            padding: 12px;
-            text-align: left;
-        }
-
-        .programme-table th {
-            background-color: #1d5d82;
-            color: white;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #0b3c5d;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 13px;
-        }
-
-        /* Breadcrumb */
-        .breadcrumb {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #1d5d82;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 15px 30px; background-color:#0b3c5d; color:white;">
+<header class="site-header">
+    <div class="header-container">
+        <img src="Images/logo.png" alt="College Logo" class="college-logo">
+        <div class="college-text">
+            <span class="line1">Gramonnati Mandal’s</span>
+            <span class="line2">College of Livestock Management & Dairy Production</span>
+            <span class="affiliation">Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur</span>
+        </div>
+        <img src="Images/mafsu_logo.jpeg" alt="MAFSU Logo" class="mafsu-logo">
+    </div>
+</header>
 
-        <!-- Left: College Logo -->
-        <div style="flex:0 0 auto;">
-            <img src="Images/logo.png" alt="College Logo" style="height:70px;">
-        </div>
-    
-        <!-- Middle: College Name -->
-        <div style="flex:1; text-align: center; line-height:1.2;">
-            <div>
-                <span style="display:block; font-size:22px; font-weight:bold;">Gramonnati Mandal’s</span>
-                <span style="display:block; font-size:24px; font-weight:bold;">College of Livestock Management & Dairy Production</span>
-                <span style="display:block; font-size:14px; margin-top:5px;">Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur</span>
-            </div>
-        </div>
-    
-        <!-- Right: MAFSU Logo -->
-        <div style="flex:0 0 auto;">
-            <img src="images/mafsu_logo.jpeg" alt="MAFSU Logo" style="height:70px;">
-        </div>
-    
-    </header>
-    
-
-<nav class="navbar">
+<nav class="site-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Institute</a></li>
-        <li><a href="program.html">Programme</a></li>
-        <li><a href="faculty.html">Faculty & Staff</a></li>
+        <li><a href="program.html" class="active">Programme</a></li>
+        <li><a href="staff.html">Faculty & Staff</a></li>
         <li><a href="admission.html">Admissions</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<section class="content">
+<main class="page">
     <div class="breadcrumb">
         <a href="index.html">Home</a> &gt; Programme Offered
     </div>
 
-    <h2>Programme Offered</h2>
-    <p>
-        The college offers a <strong>Diploma in Livestock Management & Dairy Production</strong>, 
-        under the affiliation of <strong>Maharashtra Animal & Fishery Sciences University (MAFSU), Nagpur</strong>.
-        The course is designed to provide skill-based education for students aiming 
-        to work in livestock and dairy sectors.
-    </p>
+    <section class="section">
+        <h2>Programme Offered</h2>
+        <p>
+            The college offers a <strong>Diploma in Livestock Management & Dairy Production</strong>,
+            under the affiliation of <strong>Maharashtra Animal & Fishery Sciences University (MAFSU), Nagpur</strong>.
+            The course is designed to provide skill-based education for students aiming
+            to work in livestock and dairy sectors.
+        </p>
 
-    <!-- Updated Table WITHOUT Duration Column -->
-    <table class="programme-table">
-        <tr>
-            <th>Course Name</th>
-            <th>Eligibility</th>
-            <th>Affiliation</th>
-        </tr>
-        <tr>
-            <td>Diploma in Livestock Management & Dairy Production</td>
-            <td>10+2 / Equivalent (Science / Agriculture Stream)</td>
-            <td>MAFSU, Nagpur</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Eligibility</th>
+                <th>Affiliation</th>
+            </tr>
+            <tr>
+                <td>Diploma in Livestock Management & Dairy Production</td>
+                <td>10+2 / Equivalent (Science / Agriculture Stream)</td>
+                <td>MAFSU, Nagpur</td>
+            </tr>
+        </table>
 
-    <h3>Course Highlights:</h3>
-    <ul>
-        <li>Hands-on training in livestock management and dairy operations</li>
-        <li>Skill development for rural entrepreneurship</li>
-        <li>Exposure to modern dairy technologies and practices</li>
-        <li>Preparation for employment in livestock and dairy sectors</li>
-    </ul>
-</section>
+        <h3>Course Highlights:</h3>
+        <ul>
+            <li>Hands-on training in livestock management and dairy operations</li>
+            <li>Skill development for rural entrepreneurship</li>
+            <li>Exposure to modern dairy technologies and practices</li>
+            <li>Preparation for employment in livestock and dairy sectors</li>
+        </ul>
+    </section>
+</main>
 
-<footer class="footer">
-    <p>
-        © Gramonnati Mandal’s College of Livestock Management & Dairy Production<br>
-        Narayangaon, Tal. Junnar, Dist. Pune, Maharashtra<br>
-        Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur
-    </p>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="staff.html">Faculty & Staff</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            Email: principalgmkrishi@gmail.com<br>
+            Phone: 9730804768<br>
+            Narayangaon, Tal. Junnar, Dist. Pune
+        </div>
+    </div>
 </footer>
 
 </body>

@@ -4,162 +4,48 @@
 <meta charset="UTF-8">
 <title>Gramonnati Mandal’s College</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-/* Global Styles */
-body {margin:0; font-family:Arial, Helvetica, sans-serif; background:#fff; color:#222;}
-a {text-decoration:none; color:#222;}
-h1,h2,h3 {margin:0; padding:0; color:#0f3d0f;}
-
-/* Header */
-header {background:#0f3d0f; padding:15px 30px; color:white;}
-.header-container {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
-.college-logo, .mafsu-logo {height:100px;}
-.college-text {text-align:center; line-height:1.2; flex:1;}
-.college-text span {display:block;}
-.line1 {font-size:24px; font-weight:bold;}
-.line2 {font-size:28px; font-weight:bold;}
-.affiliation {font-size:14px; margin-top:5px; color:#f5f5f5;}
-
-header + nav {margin-top:10px;}
-
-/* Navbar */
-nav {
-    background:#f4c842;
-    border-bottom:2px solid #0f3d0f;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-nav ul {list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center;}
-nav ul li a {
-    display:block;
-    padding:18px 25px;
-    color:#0f3d0f;
-    font-size:18px;
-    font-weight:bold;
-}
-nav ul li a:hover {background:#e0b631;}
-
-/* Welcome */
-.content {padding:50px 20px; max-width:1200px; margin:auto; text-align:center;}
-.content h1 {font-size:32px; margin-bottom:20px;}
-
-/* Hero */
-.hero-center {display:flex; justify-content:center; margin:30px 0;}
-.hero-center img {max-width:70%; height:auto; border-radius:8px;}
-
-/* About Section */
-.about-container {
-    display:flex;
-    max-width:1200px;
-    margin:auto;
-    margin-bottom:50px;
-    flex-wrap:wrap;
-}
-.about-left {
-    flex:1;
-    min-width:200px;
-    margin-right:20px;
-}
-.about-left ul {list-style:none; padding:0;}
-.about-left ul li {
-    padding:12px 15px;
-    background:#f2f2f2;
-    margin-bottom:5px;
-    cursor:pointer;
-    border-radius:5px;
-    border:1px solid #0f3d0f;
-    font-weight:bold;
-}
-.about-left ul li.active,
-.about-left ul li:hover {
-    background:#f4c842;
-}
-
-/* Right */
-.about-right {
-    flex:2;
-    min-width:300px;
-    border:1px solid #0f3d0f;
-    border-radius:5px;
-    padding:20px;
-    background:#fff;
-}
-
-/* FIXED IMAGE STYLE */
-.about-image {
-    display:block;
-    max-width:70%;
-    margin:25px auto;
-    border-radius:6px;
-}
-
-/* Footer */
-footer {
-    background:#0f3d0f;
-    color:white;
-    padding:30px 20px;
-}
-footer .footer-container {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    max-width:1200px;
-    margin:auto;
-}
-footer h3 {color:#f4c842;}
-footer ul {list-style:none; padding:0;}
-footer ul li {margin-bottom:8px;}
-footer ul li a {color:white;}
-
-@media(max-width:768px){
-    .header-container {flex-direction:column; text-align:center;}
-    nav ul {flex-direction:column;}
-    .about-container {flex-direction:column;}
-    .about-left {margin-right:0; margin-bottom:20px;}
-    .about-image {max-width:100%;}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="site-header">
 <div class="header-container">
-<img src="images/logo.png" class="college-logo">
+<img src="Images/logo.png" class="college-logo" alt="College Logo">
 <div class="college-text">
 <span class="line1">Gramonnati Mandal’s</span>
 <span class="line2">College of Livestock Management & Dairy Production</span>
 <span class="affiliation">Affiliated to Maharashtra Animal & Fishery Sciences University, Nagpur</span>
 </div>
-<img src="images/mafsu_logo.jpeg" class="mafsu-logo">
+<img src="Images/mafsu_logo.jpeg" class="mafsu-logo" alt="MAFSU Logo">
 </div>
 </header>
 
-<nav>
+<nav class="site-nav">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="#about-section">About Institute</a></li>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html">About Institute</a></li>
+<li><a href="program.html">Programme</a></li>
 <li><a href="staff.html">Faculty & Staff</a></li>
 <li><a href="admission.html">Admissions</a></li>
-<li><a href="#">Syllabus</a></li>
+<li><a href="syllabus.html">Syllabus</a></li>
 <li><a href="gallary.html">Gallery</a></li>
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 </nav>
 
-<div class="content">
+<main class="page">
+<section class="section content">
 <h1>Welcome to College of Livestock Management & Dairy Production</h1>
 <p>Providing skill-based education and practical training.</p>
-</div>
+</section>
 
 <div class="hero-center">
-<img src="images/hero.jpeg">
+<img src="Images/hero.jpeg" alt="Campus hero image">
 </div>
 
 <!-- About -->
-<div id="about-section" class="about-container">
+<section id="about-section" class="about-container">
 
 <div class="about-left">
 <ul>
@@ -181,7 +67,7 @@ footer ul li a {color:white;}
 The Gramonnati Mandal Institute of Narayangaon was founded by the late Guruvarya R. P. Sabnis with the vision of uplifting rural society through education. The institute has been a pioneer in agricultural and allied education in northern Pune district.
 </p>
 
-<img src="images/building.jpeg" class="about-image" alt="Institute Campus">
+<img src="Images/building.jpeg" class="about-image" alt="Institute Campus">
 
 <p>
 The institute strongly believes in combining education with rural life. Through the Diploma in Livestock Management & Dairy Production, students receive hands-on training, industry exposure, and entrepreneurial guidance.
@@ -190,7 +76,7 @@ The institute strongly believes in combining education with rural life. Through 
 
 <!-- Chairman -->
 <div id="chairman" class="about-content" style="display:none;">
-<img src="images/chairman.jpeg" style="width:120px;border-radius:50%;">
+<img src="Images/chairman.jpeg" style="width:120px;border-radius:50%;" alt="Chairman">
 <h3>Chairman’s Message</h3>
 <p>
 Our aim is to empower rural youth through quality education and skill development. We strive to create responsible professionals for the livestock and dairy sector.
@@ -199,7 +85,7 @@ Our aim is to empower rural youth through quality education and skill developmen
 
 <!-- Principal -->
 <div id="principal" class="about-content" style="display:none;">
-<img src="images/principal.jpeg" style="width:120px;border-radius:50%;">
+<img src="Images/principal.jpeg" style="width:120px;border-radius:50%;" alt="Principal">
 <h3>Principal’s Message</h3>
 <p>
 We focus on practical learning, discipline, and innovation to prepare students for real-world challenges in livestock and dairy production.
@@ -224,19 +110,19 @@ We focus on practical learning, discipline, and innovation to prepare students f
 </ul>
 </div>
 
-</div>
-</div>
+</section>
+</main>
 
-<footer>
+<footer class="site-footer">
 <div class="footer-container">
 <div>
 <h3>Quick Links</h3>
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#about-section">About</a></li>
-<li><a href="#">Staff</a></li>
-<li><a href="#">Admissions</a></li>
-<li><a href="#">Gallery</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="staff.html">Faculty & Staff</a></li>
+<li><a href="admission.html">Admissions</a></li>
+<li><a href="gallary.html">Gallery</a></li>
 </ul>
 </div>
 <div>
