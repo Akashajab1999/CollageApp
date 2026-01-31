@@ -10,10 +10,40 @@
   --text-muted: #4b5563;
   --border: #d6dbe1;
   --shadow: 0 6px 18px rgba(15, 61, 15, 0.08);
+  --nav-height: 62px;
+}
+
+html[data-theme="ocean"] {
+  --brand-primary: #0b3c5d;
+  --brand-primary-dark: #07293f;
+  --brand-accent: #58b4ff;
+  --brand-accent-dark: #3aa0f3;
+  --brand-muted: #eef5fb;
+}
+
+html[data-theme="sunset"] {
+  --brand-primary: #5c1a0b;
+  --brand-primary-dark: #3f1208;
+  --brand-accent: #ffb347;
+  --brand-accent-dark: #f39a2b;
+  --brand-muted: #fff4ec;
+}
+
+html[data-theme="slate"] {
+  --brand-primary: #1f2937;
+  --brand-primary-dark: #111827;
+  --brand-accent: #a7f3d0;
+  --brand-accent-dark: #6ee7b7;
+  --brand-muted: #f3f4f6;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -22,6 +52,7 @@ body {
   background: var(--brand-muted);
   color: var(--text-primary);
   line-height: 1.6;
+  scroll-padding-top: var(--nav-height);
 }
 
 a {
@@ -130,6 +161,15 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+[id] {
+  scroll-margin-top: 96px;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: calc(var(--nav-height) + 16px);
 }
 
 .site-nav ul,
@@ -282,6 +322,31 @@ select {
 
 .lightbox:target {
   display: flex;
+}
+
+/* ===== THEME SWITCHER ===== */
+.theme-switcher {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: var(--brand-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 2001;
+}
+
+.theme-switcher label {
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.theme-switcher select {
+  min-width: 140px;
 }
 
 /* ===== FOOTER ===== */
@@ -515,6 +580,14 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  [id] {
+    scroll-margin-top: 120px;
+  }
+
   .header-container,
   .top-header {
     flex-direction: column;
@@ -524,6 +597,21 @@ footer a:hover {
   .site-nav ul,
   nav ul {
     flex-direction: column;
+  }
+
+  .site-nav,
+  nav {
+    position: static;
+  }
+
+  .theme-switcher {
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 10px;
+  }
+
+  :root {
+    --nav-height: 220px;
   }
 
   .message {
