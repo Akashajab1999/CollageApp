@@ -6,7 +6,7 @@
     if (!value || value === "default") {
       document.documentElement.removeAttribute("data-theme");
     } else {
-      document.documentElement.setAttribute("data-theme", value);
+      document.documentElement.setAttribute("data-theme", 'emerald');
     }
   };
 
